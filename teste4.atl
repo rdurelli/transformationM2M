@@ -1,0 +1,70 @@
+-- @nsURI MM=http://www.eclipse.org/MoDisco/kdm/data
+-- @nsURI MM2=http://www.eclipse.org/uml2/3.0.0/UML
+-- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/code
+
+module teste4;
+create OUT : MM2 from IN : MM, IN1 : MM1;
+
+rule RelationalSchema2Package {
+
+	from 
+		
+		t: MM!RelationalSchema
+		
+	to
+		
+		r: MM2!Package (
+		
+			name <- t.name,
+			packagedElement <- t.dataElement
+			
+		)
+
+}
+
+rule RelactionalTable2Class {
+	
+	from
+		t: MM!RelationalTable
+
+	to
+		r: MM2!Class (
+		
+			name <- t.name,
+			ownedAttribute <- t.dataElement
+		
+		)
+}
+
+rule Column2Attribute {
+	
+	from
+		t: MM!ColumnSet (t.oclIsTypeOf(MM!ColumnSet))
+
+	to
+		r: MM2!Property (
+		
+			name <- t.name,
+			type <- typeDATA
+		
+		),
+		
+		typeDATA : MM2!PrimitiveType(
+		
+			name <- t.itemUnit.first().type.name
+		
+		)
+}
+
+
+lazy rule getCross {
+	from
+		t : MM!ItemUnit (t.oclIsTypeOf(MM!ItemUnit))
+	to 
+		r : MM2!Property (
+			
+			name <- t.name
+		
+			
+		)
+}

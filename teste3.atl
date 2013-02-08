@@ -1,0 +1,25 @@
+-- @nsURI MM=http://www.eclipse.org/MoDisco/kdm/data
+-- @path MM2=/SQLMODEL/model/sqlmodel.ecore
+-- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/code
+
+module teste3;
+create OUT : MM2 from IN : MM, IN1 : MM1;
+
+
+
+
+rule RelationalSchema2dataBase {
+	from
+		t : MM!RelationalSchema
+	to 
+		r : MM2!Database (
+			name <-  t.name,
+			tables <-   typeR
+		),
+		
+		typeR : distinct MM!DataResource foreach (e in t.dataElement) (
+		
+			name <- e.name
+				
+		)
+}

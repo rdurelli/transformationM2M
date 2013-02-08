@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:KDMSQL="http://www.dc.ufscar.br/doutorado/extesion/kdm/sql">
+  <KDMSQL:TableUnit name="ALUNO">
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="RA" type="/4"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="id" type="/5"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="lastName" type="/6"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="name" type="/7"/>
+  </KDMSQL:TableUnit>
+  <KDMSQL:TableUnit name="CLIENTE">
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario" type="/8"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario2" type="/9"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario3" type="/10"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario500" type="/11"/>
+  </KDMSQL:TableUnit>
+  <KDMSQL:TableUnit name="PERSONS">
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario" type="/12"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario2" type="/13"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario3" type="/14"/>
+  </KDMSQL:TableUnit>
+  <KDMSQL:TableUnit name="USUARIOS">
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="email" type="/15"/>
+    <codeElement xsi:type="KDMSQL:ColumnUnit" name="usuario" type="/16"/>
+  </KDMSQL:TableUnit>
+  <KDMSQL:ColumnUnit name="VARCHAR"/>
+  <KDMSQL:ColumnUnit name="INT" primaryKey="true"/>
+  <KDMSQL:ColumnUnit name="VARCHAR"/>
+  <KDMSQL:ColumnUnit name="VARCHAR"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+  <KDMSQL:ColumnUnit name="Type Default"/>
+</xmi:XMI>

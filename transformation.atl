@@ -1,0 +1,36 @@
+-- @path MM=/SQLMODEL/model/sqlmodel.ecore
+-- @path MM1=/KDMSQLExtesion/model/kdmSQL.ecore
+
+module transformation;
+create OUT : MM1 from IN : MM;
+
+
+helper def : teste : MM1!ColumnUnit = 0;
+
+rule table2TableUnit {
+	from
+		table : MM!Table
+	to 
+		tableUnit : MM1!TableUnit (
+			name <- table.name,
+			codeElement <- table.columns
+		)
+}
+
+rule column2ColumnUnit {
+	from
+		column : MM!Column 
+	to 
+		columnUnit : MM1!ColumnUnit (
+			name <- column.name,
+			type <- type
+		),
+		type : MM1!ColumnUnit (
+		
+			name <- column.type,
+			primaryKey <- column.primarykey
+			
+		)
+}
+
+

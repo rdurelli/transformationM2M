@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:code="http://www.eclipse.org/MoDisco/kdm/code" xmlns:data="http://www.eclipse.org/MoDisco/kdm/data">
+  <data:RelationalSchema name="projectValter">
+    <dataElement xsi:type="data:RelationalTable" name="ALUNO">
+      <dataElement xsi:type="data:ColumnSet" name="RA">
+        <itemUnit name="RA" type="/1"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="id">
+        <itemUnit name="id" type="/2"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="lastName">
+        <itemUnit name="lastName" type="/3"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="name">
+        <itemUnit name="name" type="/4"/>
+      </dataElement>
+    </dataElement>
+    <dataElement xsi:type="data:RelationalTable" name="CLIENTE">
+      <dataElement xsi:type="data:ColumnSet" name="usuario">
+        <itemUnit name="usuario" type="/5"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario2">
+        <itemUnit name="usuario2" type="/6"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario3">
+        <itemUnit name="usuario3" type="/7"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario500">
+        <itemUnit name="usuario500" type="/8"/>
+      </dataElement>
+    </dataElement>
+    <dataElement xsi:type="data:RelationalTable" name="PERSONS">
+      <dataElement xsi:type="data:ColumnSet" name="usuario">
+        <itemUnit name="usuario" type="/9"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario2">
+        <itemUnit name="usuario2" type="/10"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario3">
+        <itemUnit name="usuario3" type="/11"/>
+      </dataElement>
+    </dataElement>
+    <dataElement xsi:type="data:RelationalTable" name="USUARIOS">
+      <dataElement xsi:type="data:ColumnSet" name="email">
+        <itemUnit name="email" type="/12"/>
+      </dataElement>
+      <dataElement xsi:type="data:ColumnSet" name="usuario">
+        <itemUnit name="usuario" type="/13"/>
+      </dataElement>
+    </dataElement>
+  </data:RelationalSchema>
+  <code:Datatype name="VARCHAR"/>
+  <code:Datatype name="INT"/>
+  <code:Datatype name="VARCHAR"/>
+  <code:Datatype name="VARCHAR"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+  <code:Datatype name="Type Default"/>
+</xmi:XMI>

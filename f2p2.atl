@@ -1,0 +1,26 @@
+-- @path MM=/Families2Persons/Families.ecore
+-- @path MM1=/KDMSQLExtesion/model/kdmSQL.ecore
+
+module f2p2;
+create OUT : MM1 from IN : MM;
+
+
+
+rule Person2Aspect {
+	from
+		s : MM!Member
+	to 
+		t : MM1!TableUnit (
+			name <- s.name
+		)
+}
+
+rule name {
+	from
+		input_name : MM!Member
+	to 
+		output_name : MM1!TableUnit (
+			
+		)
+}
+

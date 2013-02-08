@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sqlmodel:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sqlmodel="http://sqlmodel/1.0" name="projectValter">
+  <tables name="ALUNO">
+    <columns name="RA" type="VARCHAR"/>
+    <columns name="id" type="INT" primarykey="true"/>
+    <columns name="lastName" type="VARCHAR"/>
+    <columns name="name" type="VARCHAR"/>
+  </tables>
+  <tables name="CLIENTE">
+    <columns name="usuario" type="Type Default"/>
+    <columns name="usuario2" type="Type Default"/>
+    <columns name="usuario3" type="Type Default"/>
+    <columns name="usuario500" type="Type Default"/>
+  </tables>
+  <tables name="PERSONS">
+    <columns name="usuario" type="Type Default"/>
+    <columns name="usuario2" type="Type Default"/>
+    <columns name="usuario3" type="Type Default"/>
+  </tables>
+  <tables name="USUARIOS">
+    <columns name="email" type="Type Default"/>
+    <columns name="usuario" type="Type Default"/>
+  </tables>
+</sqlmodel:Database>

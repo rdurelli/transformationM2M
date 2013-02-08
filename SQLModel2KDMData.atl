@@ -1,0 +1,41 @@
+-- @path MM=/SQLMODEL/model/sqlmodel.ecore
+-- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/data
+
+module SQLModel2KDMData;
+create OUT : MM1 from IN : MM;
+
+
+rule dataBase2RelationalSchema {
+	from
+		t : MM!Database
+	to 
+		r : MM1!RelationalSchema (
+			name <- t.name,
+			dataElement <- t.tables
+		)
+}
+
+rule table2RelationalTable {
+	from
+		t : MM!Table
+	to 
+		r : MM1!RelationalTable (
+			name <- t.name,
+		 	dataElement <- t.columns
+		)
+}
+
+rule column2ColumnSet {
+	from
+		t : MM!Column
+	to 
+		r : MM1!Data (
+			name <- t.name,
+			itemUnit <- item
+		),
+		
+		item : MM1!ColumnSet(
+			name <- t.type
+		)
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<sqlmodel:Database xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sqlmodel="http://sqlmodel/1.0" name="projectValter">
+  <tables name="Sequence {IN1!ALUNO, IN1!CLIENTE, IN1!PERSONS, IN1!USUARIOS}"/>
+</sqlmodel:Database>
