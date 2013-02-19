@@ -1,13 +1,20 @@
 -- @path MM=/SQLMODEL/model/sqlmodel.ecore
 -- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/data
 
-module SQLModel2KDMData;
+
+--this module is where I make the transformation of SQLMOdel to KDM data Package
+
+module teste2;
 create OUT : MM1 from IN : MM;
+
 
 
 rule dataBase2RelationalSchema {
 	from
 		t : MM!Database
+
+		
+		
 	to 
 		r : MM1!RelationalSchema (
 			name <- t.name,
@@ -20,22 +27,54 @@ rule table2RelationalTable {
 		t : MM!Table
 	to 
 		r : MM1!RelationalTable (
-			name <- t.name,
+			name <- t.name,	
 		 	dataElement <- t.columns
 		)
 }
 
+
 rule column2ColumnSet {
 	from
 		t : MM!Column
-	to 
-		r : MM1!Data (
+	
+	to
+	
+		r : MM1!ColumnSet (
+			--name <- t.name + '+' + t.primarykey.toString(),
 			name <- t.name,
-			itemUnit <- item
+			itemUnit <- item,
+			dataElement <- if t.primarykey then
+								 thisModule.createUniqueKey(t)
+							  else
+							  	OclUndefined
+							  endif
 		),
 		
-		item : MM1!ColumnSet(
+		item : MM1!ItemUnit (
+			name <- t.name,
+			type <- type
+			
+		),
+		
+		type : MM1!Datatype (
+		
 			name <- t.type
+			
 		)
+		
 }
 
+
+lazy rule createUniqueKey {
+	
+	from t: MM!Column
+	
+	to
+		u: MM1!UniqueKey (
+			
+			name <- t.name
+		
+		)
+
+
+}

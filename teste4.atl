@@ -2,6 +2,9 @@
 -- @nsURI MM2=http://www.eclipse.org/uml2/3.0.0/UML
 -- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/code
 
+
+
+--this module is where I make the transformation of KDM data Package to UML
 module teste4;
 create OUT : MM2 from IN : MM, IN1 : MM1;
 
@@ -36,6 +39,8 @@ rule RelactionalTable2Class {
 		)
 }
 
+
+
 rule Column2Attribute {
 	
 	from
@@ -55,6 +60,8 @@ rule Column2Attribute {
 		
 		)
 }
+
+
 
 
 lazy rule getCross {

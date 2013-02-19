@@ -2,6 +2,7 @@
 -- @nsURI MM1=http://www.eclipse.org/MoDisco/kdm/data
 
 
+--this module is where I make the transformation of SQLMOdel to KDM data Package
 
 module teste2;
 create OUT : MM1 from IN : MM;
