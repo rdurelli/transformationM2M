@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_LDkbIRVvEeOBxMfZ0TWbtw" name="projectValter">
+    <packagedElement xmi:type="uml:Class" xmi:id="_LDkbIhVvEeOBxMfZ0TWbtw" name="ALUNO">
+      <ownedAttribute xmi:id="_LDkbIxVvEeOBxMfZ0TWbtw" name="RA" type="_LDkbKRVvEeOBxMfZ0TWbtw"/>
+      <ownedAttribute xmi:id="_LDkbJBVvEeOBxMfZ0TWbtw" name="id" type="_LDkbKhVvEeOBxMfZ0TWbtw"/>
+      <ownedAttribute xmi:id="_LDkbJRVvEeOBxMfZ0TWbtw" name="lastName" type="_LDlCMBVvEeOBxMfZ0TWbtw"/>
+      <ownedAttribute xmi:id="_LDkbJhVvEeOBxMfZ0TWbtw" name="name" type="_LDlCMRVvEeOBxMfZ0TWbtw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LDkbJxVvEeOBxMfZ0TWbtw" name="CLIENTE"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_LDkbKBVvEeOBxMfZ0TWbtw" name="EMPLOYEE"/>
+  </uml:Package>
+  <uml:PrimitiveType xmi:id="_LDkbKRVvEeOBxMfZ0TWbtw" name="VARCHAR"/>
+  <uml:PrimitiveType xmi:id="_LDkbKhVvEeOBxMfZ0TWbtw" name="INT"/>
+  <uml:PrimitiveType xmi:id="_LDlCMBVvEeOBxMfZ0TWbtw" name="VARCHAR"/>
+  <uml:PrimitiveType xmi:id="_LDlCMRVvEeOBxMfZ0TWbtw" name="VARCHAR"/>
+</xmi:XMI>

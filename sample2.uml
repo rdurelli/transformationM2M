@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package xmi:id="_JVsycKwkEeKxtJGxVWjlew" name="projectValter">
+    <packagedElement xmi:type="uml:Class" xmi:id="_JVsycawkEeKxtJGxVWjlew" name="ALUNO">
+      <ownedAttribute xmi:id="_JVsycqwkEeKxtJGxVWjlew" name="RA" type="_JVsygqwkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyc6wkEeKxtJGxVWjlew" name="id" type="_JVtZgKwkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsydKwkEeKxtJGxVWjlew" name="lastName" type="_JVtZgawkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsydawkEeKxtJGxVWjlew" name="name" type="_JVtZgqwkEeKxtJGxVWjlew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JVsydqwkEeKxtJGxVWjlew" name="CLIENTE">
+      <ownedAttribute xmi:id="_JVsyd6wkEeKxtJGxVWjlew" name="usuario" type="_JVtZg6wkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyeKwkEeKxtJGxVWjlew" name="usuario2" type="_JVtZhKwkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyeawkEeKxtJGxVWjlew" name="usuario3" type="_JVtZhawkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyeqwkEeKxtJGxVWjlew" name="usuario500" type="_JVtZhqwkEeKxtJGxVWjlew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JVsye6wkEeKxtJGxVWjlew" name="PERSONS">
+      <ownedAttribute xmi:id="_JVsyfKwkEeKxtJGxVWjlew" name="usuario" type="_JVtZh6wkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyfawkEeKxtJGxVWjlew" name="usuario2" type="_JVtZiKwkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsyfqwkEeKxtJGxVWjlew" name="usuario3" type="_JVtZiawkEeKxtJGxVWjlew"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_JVsyf6wkEeKxtJGxVWjlew" name="USUARIOS">
+      <ownedAttribute xmi:id="_JVsygKwkEeKxtJGxVWjlew" name="email" type="_JVtZiqwkEeKxtJGxVWjlew"/>
+      <ownedAttribute xmi:id="_JVsygawkEeKxtJGxVWjlew" name="usuario" type="_JVtZi6wkEeKxtJGxVWjlew"/>
+    </packagedElement>
+  </uml:Package>
+  <uml:PrimitiveType xmi:id="_JVsygqwkEeKxtJGxVWjlew" name="VARCHAR"/>
+  <uml:PrimitiveType xmi:id="_JVtZgKwkEeKxtJGxVWjlew" name="INT"/>
+  <uml:PrimitiveType xmi:id="_JVtZgawkEeKxtJGxVWjlew" name="VARCHAR"/>
+  <uml:PrimitiveType xmi:id="_JVtZgqwkEeKxtJGxVWjlew" name="VARCHAR"/>
+  <uml:PrimitiveType xmi:id="_JVtZg6wkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZhKwkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZhawkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZhqwkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZh6wkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZiKwkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZiawkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZiqwkEeKxtJGxVWjlew" name="Type Default"/>
+  <uml:PrimitiveType xmi:id="_JVtZi6wkEeKxtJGxVWjlew" name="Type Default"/>
+</xmi:XMI>
